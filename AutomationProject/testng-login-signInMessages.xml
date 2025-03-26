@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Test-methodSuite">
+    <test name="Login Sing In message tests">
+        <classes>
+            <class name ="MultipleTests.LoginTests">
+                <methods>
+                    <include name ="LoginErrorMessages">
+                        <parameter name="username" value="blasfsafasfabla"></parameter>
+                        <parameter name="password" value="asfsaf"></parameter>
+                        <parameter name="message" value="User not found"></parameter>
+                    </include>
+                    <exclude name = "LoginUser"/>
+                    <exclude name = "LoginUserPathVerification"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
